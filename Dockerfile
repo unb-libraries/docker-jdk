@@ -10,5 +10,5 @@ RUN \
   apt-get update && \
   apt-get install -y oracle-java${JAVA_MAJOR_VERSION}-installer
 RUN apt-get clean && \
-  rm -rf /var/cache/oracle-jdk${JAVA_MAJOR_VERSION}-installer
+  rm -rf /var/cache/oracle-jdk${JAVA_MAJOR_VERSION}-installer && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
