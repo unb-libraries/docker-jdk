@@ -5,7 +5,7 @@ Docker container : Serves as a base container for java services. Leverages phusi
 This container serves little purpose on it's own, rather as the base for other images - e.g. [unblibraries/elasticsearch](https://registry.hub.docker.com/u/unblibraries/elasticsearch/).
 
 ```
-FROM unblibraries/jdk:oracle7
+FROM unblibraries/jdk:oracle8
 ...
 ```
 

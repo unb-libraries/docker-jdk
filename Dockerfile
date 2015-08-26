@@ -1,8 +1,8 @@
 FROM phusion/baseimage:latest
 MAINTAINER Jacob Sanford <jsanford_at_unb.ca>
 
-ENV JAVA_MAJOR_VERSION 7
-ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
+ENV JAVA_MAJOR_VERSION 8
+ENV JAVA_HOME /usr/lib/jvm/java-${JAVA_MAJOR_VERSION}-oracle
 
 RUN \
   echo oracle-java${JAVA_MAJOR_VERSION}-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections && \
